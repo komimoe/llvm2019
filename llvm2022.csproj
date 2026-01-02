@@ -56,7 +56,7 @@
     <Content Include="llvm-general.xml">
       <IncludeInVSIX>true</IncludeInVSIX>
       <InstallRoot>MSBuild</InstallRoot>
-      <VSIXSubPath>Microsoft\VC\v170\2052</VSIXSubPath>
+      <VSIXSubPath>Microsoft\VC\v170</VSIXSubPath>
     </Content>
     <Content Include="LLVM.Cpp.Common.props">
       <IncludeInVSIX>true</IncludeInVSIX>
@@ -99,6 +99,55 @@
       <IncludeInVSIX>true</IncludeInVSIX>
       <InstallRoot>MSBuild</InstallRoot>
       <VSIXSubPath>Microsoft\VC\v170\Platforms\Win32\PlatformToolsets\llvm</VSIXSubPath>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="llvm-general.xml">
+      <IncludeInVSIX>true</IncludeInVSIX>
+      <InstallRoot>MSBuild</InstallRoot>
+      <VSIXSubPath>Microsoft\VC\v180</VSIXSubPath>
+    </Content>
+    <Content Include="LLVM.Cpp.Common.props">
+      <IncludeInVSIX>true</IncludeInVSIX>
+      <InstallRoot>MSBuild</InstallRoot>
+      <VSIXSubPath>Microsoft\VC\v180</VSIXSubPath>
+    </Content>
+    <Content Include="license.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="LLVM.Cpp.Common.targets">
+      <IncludeInVSIX>true</IncludeInVSIX>
+      <InstallRoot>MSBuild</InstallRoot>
+      <VSIXSubPath>Microsoft\VC\v180</VSIXSubPath>
+    </Content>
+    <None Include="source.extension.vsixmanifest">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Key.snk" />
+    <Content Include="llvm2019.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="Platformx64\Toolset.props">
+      <IncludeInVSIX>true</IncludeInVSIX>
+      <InstallRoot>MSBuild</InstallRoot>
+      <VSIXSubPath>Microsoft\VC\v180\Platforms\x64\PlatformToolsets\llvm</VSIXSubPath>
+    </Content>
+    <Content Include="Platformx64\Toolset.targets">
+      <IncludeInVSIX>true</IncludeInVSIX>
+      <InstallRoot>MSBuild</InstallRoot>
+      <VSIXSubPath>Microsoft\VC\v180\Platforms\x64\PlatformToolsets\llvm</VSIXSubPath>
+    </Content>
+    <Content Include="Platformx86\Toolset.props">
+      <IncludeInVSIX>true</IncludeInVSIX>
+      <InstallRoot>MSBuild</InstallRoot>
+      <VSIXSubPath>Microsoft\VC\v180\Platforms\Win32\PlatformToolsets\llvm</VSIXSubPath>
+    </Content>
+    <Content Include="Platformx86\Toolset.targets">
+      <IncludeInVSIX>true</IncludeInVSIX>
+      <InstallRoot>MSBuild</InstallRoot>
+      <VSIXSubPath>Microsoft\VC\v180\Platforms\Win32\PlatformToolsets\llvm</VSIXSubPath>
     </Content>
   </ItemGroup>
   <ItemGroup>

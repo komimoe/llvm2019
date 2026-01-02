@@ -15,7 +15,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PropertyPageSchema Include="$(VCTargetsPath)$(LangID)\llvm-general.xml">
+        <PropertyPageSchema Include="$(VCTargetsPath)\llvm-general.xml">
             <Context>Project</Context>
         </PropertyPageSchema>
     </ItemGroup>
