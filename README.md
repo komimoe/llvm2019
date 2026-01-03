@@ -1,11 +1,11 @@
 # llvm2022
-Allows the LLVM Compiler Toolchain (installed separately) to be used from within Visual Studio 2022 (only) to build C/C++ Projects.
+Allows the LLVM Compiler Toolchain (installed separately) to be used from within Visual Studio 2022/2026 to build C/C++ Projects.
 
 This is a (slighly) modified version of the extension as published under [llvm-project](https://github.com/llvm/llvm-project) (folder llvm/tools/msbuild) for Visual Studio 2017.
 
 This is a (slighly) modified version of the extension as published under [llvm2019](https://github.com/mangh/llvm2019) (folder llvm/tools/msbuild) for Visual Studio 2019.
 
-Built with Visual Studio 2022 Community edition. Tested (very cursory) under Visual Studio 2022 Community only.
+Built with Visual Studio 2022/2026. Tested (very cursory) under Visual Studio 2022/2026.
 
 Inspired by:
 
