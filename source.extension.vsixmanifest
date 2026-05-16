@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" ?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="llvm2022.c17776c5-ce07-fb35-3729-dfb7a9d50441" Version="2026.1.2" Language="en-US" Publisher="KomiMoe" />
+        <Identity Id="llvm2022.c17776c5-ce07-fb35-3729-dfb7a9d50441" Version="2026.1.3" Language="en-US" Publisher="komimoe" />
         <DisplayName>llvm2022</DisplayName>
-        <Description xml:space="preserve">Allows the LLVM Compiler Toolchain (installed separately) to be used from within Visual Studio 2022 (only) to build C/C++ Projects.</Description>
+        <Description xml:space="preserve">Allows the LLVM Compiler Toolchain (installed separately) to be used from within Visual Studio 2022/2026 to build C/C++ Projects.</Description>
         <MoreInfo>https://github.com/KomiMoe/llvm2019</MoreInfo>
-        <License>license.txt</License>
+        <License>LICENSE.TXT</License>
         <Icon>llvm2019.png</Icon>
         <Tags>llvm; clang</Tags>
     </Metadata>
@@ -34,14 +34,37 @@
         <InstallationTarget Version="[17.0,18.0)" Id="Microsoft.VisualStudio.Preview">
             <ProductArchitecture>amd64</ProductArchitecture>
         </InstallationTarget>
-
+        <InstallationTarget Version="[18.0,19.0)" Id="Microsoft.VisualStudio.Community">
+            <ProductArchitecture>x86</ProductArchitecture>
+        </InstallationTarget>
+        <InstallationTarget Version="[18.0,19.0)" Id="Microsoft.VisualStudio.Community">
+            <ProductArchitecture>amd64</ProductArchitecture>
+        </InstallationTarget>
+        <InstallationTarget Version="[18.0,19.0)" Id="Microsoft.VisualStudio.Pro">
+            <ProductArchitecture>x86</ProductArchitecture>
+        </InstallationTarget>
+        <InstallationTarget Version="[18.0,19.0)" Id="Microsoft.VisualStudio.Pro">
+            <ProductArchitecture>amd64</ProductArchitecture>
+        </InstallationTarget>
+        <InstallationTarget Version="[18.0,19.0)" Id="Microsoft.VisualStudio.Enterprise">
+            <ProductArchitecture>x86</ProductArchitecture>
+        </InstallationTarget>
+        <InstallationTarget Version="[18.0,19.0)" Id="Microsoft.VisualStudio.Enterprise">
+            <ProductArchitecture>amd64</ProductArchitecture>
+        </InstallationTarget>
+        <InstallationTarget Version="[18.0,19.0)" Id="Microsoft.VisualStudio.Preview">
+            <ProductArchitecture>x86</ProductArchitecture>
+        </InstallationTarget>
+        <InstallationTarget Version="[18.0,19.0)" Id="Microsoft.VisualStudio.Preview">
+            <ProductArchitecture>amd64</ProductArchitecture>
+        </InstallationTarget>
     </Installation>
     <Dependencies>
         <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.7.2,)" />
     </Dependencies>
     <Prerequisites>
-        <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[17.0.31804.368,18.0)" DisplayName="Visual Studio core editor" />
-        <Prerequisite Id="Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Core" Version="[17.0.31804.368,18.0)" DisplayName="C++ core desktop features" />
-        <Prerequisite Id="Microsoft.VisualStudio.Component.VC.CoreIde" Version="[17.0.31804.368,18.0)" DisplayName="C++ core features" />
+        <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[17.0.31804.368,19.0)" DisplayName="Visual Studio core editor" />
+        <Prerequisite Id="Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Core" Version="[17.0.31804.368,19.0)" DisplayName="C++ core desktop features" />
+        <Prerequisite Id="Microsoft.VisualStudio.Component.VC.CoreIde" Version="[17.0.31804.368,19.0)" DisplayName="C++ core features" />
     </Prerequisites>
 </PackageManifest>
