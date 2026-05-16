@@ -20,8 +20,8 @@
     <ProjectGuid>{89FDE99F-79D1-419B-8728-AF50ACE007D9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>llvm2022</RootNamespace>
-    <AssemblyName>llvm2022</AssemblyName>
+    <RootNamespace>llvm2026</RootNamespace>
+    <AssemblyName>llvm2026</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <GeneratePkgDefFile>false</GeneratePkgDefFile>
     <IncludeAssemblyInVSIXContainer>false</IncludeAssemblyInVSIXContainer>
